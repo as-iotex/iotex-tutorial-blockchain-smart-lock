@@ -14,7 +14,7 @@ contract Lock is Ownable {
     /** Store the smart lock state */
     bool private _open;
     
-    /** Initialise the lock in a closed state */
+    /** Initialise the lock state */
     constructor (bool open) { _open = open; }
 
     /** Sets the state of the lock */  
