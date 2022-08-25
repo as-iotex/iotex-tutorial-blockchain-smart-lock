@@ -16,7 +16,8 @@
 #define LOCK_PIN    <YOUR_PIN>
 
 // IoTeX HTTP gateway
-#define IOTEX_GATEWAY_IP    <THE_GATEWAY_IP>
-#define IOTEX_GATEWAY_PORT    <THE_GATEWAY_PORT>
+
+// Wallet private key, used to set the state i the contract
+#define SECRET_PRIVATE_KEY    <your_private_key>
 
 #endif
