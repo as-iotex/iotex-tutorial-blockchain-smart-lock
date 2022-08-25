@@ -70,6 +70,8 @@ You need to configure the sketch to suit your environment following the steps be
 
 ## Opening/closing the lock
 
+## Opening and closing the lock from the smart contract
+
 In order to open and close the lock, you need to call the `setState()` function of your contract.  
 You can do this with the [ioctl](https://docs.iotex.io/reference/ioctl-cli-reference) command line tool. Follow the [installation](https://docs.iotex.io/reference/ioctl-cli-reference/installation) instructions to install the tool in your pc.  
 
@@ -87,3 +89,19 @@ And the following one to close it:
 `ioctl contract invoke function io1x6y5gjty378vjwqz7ahdkf5thfeum9q23h394w Lock.abi setState --with-arguments '{"open": false }'`
 
 After you run each command, wait for some seconds to ensure that the transaction is confirmed and the device opens or closes the lock.  
+
+## Opening and closing the lock using a button / sensor
+
+You can also change the lock status by using a physical button or presence sensor.  
+
+### Wiring the button / sensor to your board
+
+- [ ] Wiring diagram
+
+Wire your button to a digital pin on your board and GND. Make sure the pin supports interrupts.  
+Set the value of `BUTTON_PIN` in the sketch to the pin you are using.  
+
+### Opening and closing the lock using the button
+
+Simply press the button to toggle the status of the lock.  
+The device will take care of changing the status of the physical lock and updating the value in the smart contract.  
