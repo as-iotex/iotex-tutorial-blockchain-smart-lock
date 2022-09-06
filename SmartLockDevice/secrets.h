@@ -16,6 +16,8 @@
 #define LOCK_PIN    <YOUR_PIN>
 
 // IoTeX HTTP gateway
+#define IOTEX_GATEWAY_IP    "json.testnet.iotex.io"
+#define IOTEX_GATEWAY_PORT    80
 
 // Wallet private key, used to set the state i the contract
 #define SECRET_PRIVATE_KEY    <your_private_key>
